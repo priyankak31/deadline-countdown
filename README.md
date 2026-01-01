@@ -1,27 +1,35 @@
-# DeadlineCountdown
+# Angular Deadline Countdown
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+## Problem
+Create an Angular component that displays a live countdown timer showing the number of seconds left to a fixed deadline.  
+The countdown value updates every second using data from an API endpoint.
 
-## Development server
+API Response:
+```json
+{ "secondsLeft": number } 
+```
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tech Stack
+- Angular 18
+- TypeScript
+- RxJS
+- Node.js 20
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Run Project
+```bash
+npm install
+npm start
+```
+---
 
-## Build
+## Notes
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Uses Angular standalone component
 
-## Running unit tests
+- API is mocked for local testing
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Countdown updates every second
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
